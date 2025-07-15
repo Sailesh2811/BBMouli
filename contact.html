@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+    .contact-form, .contact-info {
+      padding: 30px;
+      flex: 1 1 400px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .contact-info {
+      background-color: #f9f9f9;
+      border-left: 1px solid #ddd;
+    }
+    .info-item {
+      margin-bottom: 20px;
+    }
+    .info-item strong {
+      display: block;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #003060;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    nav button {
+      background: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #003060;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    nav button:hover {
+      background: #ffcc00;
+    }
+    a{
+      text-decoration: none;
+    }
+    footer {
+        background: #003060;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 60px;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Physics with Sir B. B. Mouli</h1>
+    <p>Exploring the universe one lesson at a time</p>
+  </header>
+
+  <nav>
+    <button><a href="index.html">Home</a></button>
+    <button><a href="contact.html">Contact</a></button>
+    <button> <a href="notes.html">Notes</a></button>
+  </nav>
+  <div class="container">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form action="https://formspree.io/f/manjaqpe" method="post">
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input type="email" name="email" placeholder="Your Email Address" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Info</h2>
+      <div class="info-item">
+        <strong>Email:</strong>
+        bbmouli123@gmail.com
+      </div>
+      <div class="info-item">
+        <strong>Phone:</strong>
+        +91 95053 02266
+      </div>
+      <div class="info-item">
+        <strong>Address:</strong>
+        103, L S Avenue,<br/>
+        Madhuranagar, Vijayawada, AndhraPradesh.
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Physics with Sir B. B. Mouli | All rights reserved</p>
+  </footer>
+</body>
+</html>
